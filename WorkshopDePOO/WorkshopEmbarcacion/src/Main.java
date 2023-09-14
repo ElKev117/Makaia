@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         String siNO;
-        Capitan capitan1 = new Capitan("Juan", "Perez", "12345");
+        Capitan capitan1 = new Capitan("Juan", "Osorio", "12345");
         Capitan capitan2 = new Capitan("Kevin", "Gómez", "6789");
         Velero velero1 = new Velero(capitan1, 100000, 20000, 2021, 10.5, 5);
         Yate yate1 = new Yate(capitan2, 200000, 20000, 2019, 15.0, 10);
