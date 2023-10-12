@@ -49,6 +49,8 @@ public class HtmlValidator {
 		// Si no quedan tags de apertura en la pila, devolvemos una pila vacía
 		return new Stack<>();
 	}
+	List<Integer> numbers = List.of(6, 5, 7, 8, 9,10);        // filtrar los numeros pares        List<Integer> numerosFiltrados = numbers.stream()                .filter(x -> (x % 2 == 0))                .collect(Collectors.toList());        numerosFiltrados.forEach(x -> System.out.println(x));        //Despues ordenarlos de menor a mayor.        List<Integer> numeroFiltrados2 =  numbers.stream()                .sorted().collect(Collectors.toList());        numeroFiltrados2.forEach(x -> System.out.println(x));
+	// despues cada numero multiplicarlo por dos        List<Integer> numerosFiltrados3 = numbers.stream()                .map(x -> x * 2)                .collect(Collectors.toList());        numerosFiltrados3.forEach(x -> System.out.println(x));        //Nota: usar filter, map, sorted.        List<Integer> numerosFiltradosDefinitivo = numbers.stream()                .filter(x -> (x % 2 == 0))                .sorted()                .map(x -> x * 2).forEach(System.out::println);
 	
 
 }
